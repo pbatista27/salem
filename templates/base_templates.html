@@ -1,0 +1,84 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Simonetta&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/inicio.css' %}">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        {% block head %}
+        {% endblock %}
+        <title>
+            {% block title %}
+                SalemStore5
+            {% endblock %}
+        </title>
+    </head>
+    <body style="font-family:Simonetta">
+        <header>
+            {% block header %}
+
+            {% endblock %}
+            {% block menu %}
+                {% include "menu_sitio.html" %}
+            {% endblock %}
+        </header>
+        <main>
+            <div class="container-fluid master mt-5 pt-2">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        {% block container %}
+
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <h2 class="footer-heading mb-4">Nosotros</h2>
+                                <p>Somos una empresa virtual que ofrecemos calidad de productos brindandole la mejor a tension a nuestros clientes</p>
+                            </div>
+                            <div class="col-md-3 ml-auto">
+                                <h2 class="footer-heading mb-4">Menu</h2>
+                                <ul class="list-unstyled">
+                                    <li><a href="/">Inicio</a></li>
+                                    <li><a href="">Productos</a></li>
+                                    <li><a href="">Contactos</a></li>
+                                    <li><a href="">Entrar</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h2 class="footer-heading mb-4 ">Siguenos</h2>
+                                <a href="#" target="_blank" class="pl-0 pr-3" title="Facebook"><span class="fab fa-facebook fa-2x"></span></a>
+                                <a href="#" target="_blank" class="pl-3 pr-3" title="Twitter"><span class="fab fa-twitter fa-2x"></span></a>
+                                <a href="https://www.instagram.com/salemstore5/" target="_blank" class="pl-3 pr-3" title="Instagram"><span class="fab fa-instagram fa-2x"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <div class="border-top pt-5">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright © 2019 All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by SalemStore5
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

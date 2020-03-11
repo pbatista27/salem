@@ -1,0 +1,13 @@
+{% extends 'base_templates.html' %}
+{% block title %}{{ post.titulo }}{% endblock %}
+
+{% block container %}
+    <div class="card mt-5 mb-5">
+        <div class="card-body py-5 px-5">
+            {{ post.cuerpo| safe }}
+        </div>
+        <p class="date ml-auto py-2 px-2">
+            Publicado {{ post.publicado }} por {{ post.autor }}
+        </p>
+    </div>
+{% endblock %}

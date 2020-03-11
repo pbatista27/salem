@@ -1,0 +1,20 @@
+.card-header{
+    text-align: center;
+    display:block;
+    color:darkslateblue;
+    font-size:large;
+    background-color:rgba(122, 122, 122, 0.15);
+    margin: 0px;
+    padding: 0px;
+}
+.card-title-producto{
+    font-size: larger !important;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+img.img-producto-lista{
+    width:265px;
+    height:265px;
+}

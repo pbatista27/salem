@@ -1,0 +1,17 @@
+img.card-img-top {
+    width: 80px;
+    height: auto;
+    margin: auto;
+    padding-left: 13px;
+}
+
+.card.signos{
+    width: 90%;
+    max-width: 90%;
+    height: 517px;
+    min-height: 517px !important;
+}
+
+span {
+    color: blue;
+}

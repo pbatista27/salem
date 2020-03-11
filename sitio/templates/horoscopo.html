@@ -1,0 +1,63 @@
+{% extends 'base_templates.html' %}
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/horoscopo.css' %}">
+{% endblock %}
+{% block title %}
+    Horoscopo
+{% endblock %}
+{% block container %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+               <div class="card mt-5 mb-5 py-2">
+                    <div class="card-body">
+                        <h4 class="card-title">Fecha : {{ titulo }}</h4>
+                        <h1 class="card-text text-center ">Horoscopo</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="row">
+                <div class="col-lg-12">
+                      <div class="row">
+                        {% for key, value in horoscopos.items %}
+
+                            <div class="col-md-4 col-lg-4">
+                                <div class="card signos mt-2 mb-2 py-5">
+                                    <div class="row">
+                                        <div class="col-lg-3">
+                                            <img src="{% static 'img/signos-zodiacales/' %}{{ value.nombre }}.png" class="card-img-top" alt="{{ value.nombre }}">
+                                        </div>
+                                        <div class="col-lg-9">
+                                        <h5 class="card-title">{{ value.nombre }}</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-muted mb-4">{{ value.fechaSigno }}</h6>
+                                        <p>
+                                          <span>Amor :</span> {{value.amor}}
+                                        </p>
+                                        <p>
+                                            <span>Dinero :</span> {{value.dinero}}
+                                        </p>
+                                        <p>
+                                            <span>Salud :</span> {{value.salud}}
+                                        </p>
+                                        <p>
+                                            <span>Numero :</span> {{value.numero}}
+                                        </p>
+                                        <p>
+                                            <span>Color :</span> {{value.color}}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                      </div>
+                </div>
+            </div>
+
+{% endblock %}

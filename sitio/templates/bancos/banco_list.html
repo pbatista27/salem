@@ -1,0 +1,38 @@
+{% extends 'base_templates.html' %}
+{% block head %}
+    <style>
+        .table td {
+            vertical-align: middle;
+        }
+    </style>
+{%  endblock %}
+{% block container %}
+    <div class="card mt-5 mb-5">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class="thead-dark">
+                    <th>Bancos</th>
+                    <th>Cuentas</th>
+                    <th>Tipos</th>
+                    <th>Beneficiario</th>
+                    <th>Cedula</th>
+                    </thead>
+                    <tbody>
+                        {% for banco in bancos %}
+                                <tr>
+                                    <td><img src="{{ banco.img.url }}" style="width: 160px; height: 80px" /></td>
+                                    <td>{{ banco.cuenta }}</td>
+                                    <td>{{ banco.tipo | default:'-' | capfirst}}</td>
+                                    <td>{{ banco.nombre | title }}</td>
+                                    <td>{{ banco.cedula | capfirst }}</td>
+                                </tr>
+                            {% empty %}
+                                <h3>No hay Bancos Registrado</h3>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

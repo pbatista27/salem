@@ -1,0 +1,34 @@
+{% extends 'base_templates.html' %}
+
+{% block container %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h1>{{ producto.nombre | title}}</h1>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-lg-8">
+            <div class="card">
+                <div class="card-body">
+                    <figure class="text-center">
+                        <img class="img img-responsive" width="100%" height='auto' src="{{ producto.img.url }}"/>
+                        <figcaption>{{ producto.nombre }}</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h4>Descripcion:</h4>
+                    <h4>{{ producto.descripcion | capfirst }}</h4>
+                </div>
+            </div>
+              <div class="card">
+                <div class="card-body">
+                    <h4>Precio: {{ producto.precio }} Bs</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,58 @@
+html{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgba(123,123,123,0.1) !important;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+main{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0px;
+    margin:auto;
+}
+div.sitio.card img.card-img-top {
+    height: 380px !important;
+    max-height: 380px !important;
+}
+
+img.d-block.w-100 {
+    height: 430px !important;
+    max-height: 430px !important;
+}
+
+
+.carousel-item {
+    height: 430px !important;
+}
+
+div.sitio.card h5.card-title {
+    padding-bottom: 5px;
+    border-bottom: solid 3px silver;
+}
+
+footer{
+    padding: 4em 0;
+    background-color: white;
+    width: 100%;
+}
+
+/* codigo de animacio*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@media (prefers-reduced-motion) {
+    .animated {
+        -webkit-animation: unset !important;
+        animation: unset !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+}
