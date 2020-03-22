@@ -1,5 +1,5 @@
 """formularios"""
-from django.contrib.auth import authenticate
+
 from django import forms
 from .models import Contacto
 
@@ -42,5 +42,6 @@ class ContactoForm(forms.ModelForm):
                     'placeholder': 'Digite Mensaje',
                 })
         }
+
 
 

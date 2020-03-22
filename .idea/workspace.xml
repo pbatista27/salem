@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3efc4a91-948d-419a-ac21-1fdf7fb00bb2" name="Default Changelist" comment="" />
+    <list default="true" id="3efc4a91-948d-419a-ac21-1fdf7fb00bb2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitio/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitio/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitio/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/sitio/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitio/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/sitio/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitio/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitio/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitio/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/sitio/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tablero/templates/tablero/inicio.html" beforeDir="false" afterPath="$PROJECT_DIR$/tablero/templates/tablero/inicio.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +20,11 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YJStHOjsKCDc5mf0DK0fBwi4jB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -18,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -77,6 +92,10 @@
       <workItem from="1583597057954" duration="15209000" />
       <workItem from="1583752577872" duration="10200000" />
       <workItem from="1583860679590" duration="491000" />
+      <workItem from="1583935630984" duration="7885000" />
+      <workItem from="1584297953964" duration="7410000" />
+      <workItem from="1584384487538" duration="7650000" />
+      <workItem from="1584469274925" duration="3273000" />
     </task>
     <servers />
   </component>
@@ -108,9 +127,13 @@
       <screen x="0" y="0" width="1366" height="732" />
     </state>
     <state x="180" y="0" width="1005" height="736" key="SettingsEditor/0.0.1366.732@0.0.1366.732" timestamp="1583431002505" />
-    <state x="364" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1583860678757">
+    <state x="364" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1584469345404">
       <screen x="0" y="0" width="1366" height="732" />
     </state>
-    <state x="364" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1583860678757" />
+    <state x="364" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1584469345404" />
+    <state x="346" y="53" width="672" height="678" key="search.everywhere.popup" timestamp="1584394625569">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="346" y="53" width="672" height="678" key="search.everywhere.popup/0.0.1366.732@0.0.1366.732" timestamp="1584394625569" />
   </component>
 </project>

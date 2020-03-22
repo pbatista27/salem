@@ -1,15 +1,16 @@
 from django.conf import settings
 from django.core.mail import EmailMessage
+from django.http.response import HttpResponseRedirect
 from django.template.loader import render_to_string
 from django.views.generic import TemplateView
 from django.views.generic.edit import FormView
 from django.views.generic.list import ListView
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login
+from django.contrib.auth.forms import AuthenticationForm
 from django.urls import reverse_lazy
 from .forms import ContactoForm
-from django.shortcuts import render
-import requests, json
-from django.http import request
+import requests
+import json
 from .models import Carrusel, Bancos
 # Create your views here.
 
@@ -75,11 +76,23 @@ class Contacto(FormView):
         email_mensaje_usuario.content_subtype = 'html'
         email_mensaje_usuario.send()
 
-class Login(TemplateView):
+class Login(FormView):
     template_name = 'login.html'
+    form_class = AuthenticationForm
+    success_url = reverse_lazy('tablero:tablero')
 
-    def post(self, request, *args, **kw):
-       pass
+    def dispatch(self, request, *args, **kwargs):
+        # Si el usuario está autenticado entonces nos direcciona a la url establecida en success_url
+        if request.user.is_authenticated:
+            return HttpResponseRedirect(self.get_success_url())
+        # Sino lo está entonces nos muestra la plantilla del login simplemente
+        else:
+            return super(Login, self).dispatch(request, *args, **kwargs)
+
+    def form_valid(self, form):
+        login(self.request, form.get_user())
+        return super(Login, self).form_valid(form)
+
 
 
 
